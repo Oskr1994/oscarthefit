@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <section id="inicio" class="inicio">
-    <h2>FITNESS<br>TRAINER</h2>
+    <h2>FITNESS<br>TRAINER</h2>  
     <div class="barra-superior">
         <nav class="nav-bar">
             <div class="logo">
@@ -26,12 +26,19 @@
     </div>
     <div class="portada">
         <h1>OSCAR PEREZ</h1>
-        <button class="btn">PLANES</button>    
+        <button class="btn">PLANES</button>
+  
+    </div>
+    <div class="wsp">
+        <a href="https://api.whatsapp.com/send?phone=51916875034" target="_blank">
+            <img src="imagenes/whatsapp-rojo.png" alt="WhatsApp" width="50px">
+        </a>
+        <a class="flecha-arriba" href="#inicio"><img src="imagenes/flecha-hacia-arriba.png" alt="flecha-arriba" width="30px"></a>
     </div>
 </section>
 
 <section id="sobremi" class="sobremi">
-    <div>
+    <div class="textosobremi">
         <h1>SOBRE MI</h1>
         <div class="linea"></div>
         <p>Soy Oscar Pérez, entrenador personal, ex atleta de culturismo
@@ -62,7 +69,7 @@
     <div class="foto2">
         <img src="imagenes/foto-2.jpg" alt="entrenador" width="300px">
     </div>
-    <div>
+    <div class="textopersonaltraining">
         <h1>PERSONAL TRAINER</h1>
         <div class="linea"></div>
         <p>Entrenador personal con experiencia en culturismo, natación y 
@@ -79,6 +86,65 @@
     </div>
 </section>
 
+<section id="Planes" class="planes">
+    <div class="textoplanes">
+        <h1>PLANES DE ENTRENAMIENTO</h1>
+        <div class="linea"></div>
+        <p>Ofrezco planes de entrenamiento personalizados para cada cliente, 
+            adaptados a sus necesidades y objetivos específicos. Mis planes 
+            incluyen rutinas de entrenamiento, asesoramiento nutricional y 
+            seguimiento constante para asegurar resultados óptimos. Ya sea 
+            que busques perder peso, ganar masa muscular o mejorar tu 
+            rendimiento deportivo, estoy aquí para ayudarte a alcanzar tus metas.</p>
+    </div>
+
+    <div class="contenedoresplanes">
+
+        <div class="plan1" style="background: linear-gradient(rgba(30, 0, 0, 0.5),
+         rgba(30, 0, 0, 0.5)), url('imagenes/plan-1.jpg') no-repeat center center/cover; background-position: top left">
+            <h1>ENTRENAMIENTO<br>
+                PERSONALIZADO</h1>
+            <div class="lineaplan"></div>        
+            <p>Entrenamiento presencial</p>
+            <p>Plan nutricional</p>
+            <p>Plan de entrenamiento</p>
+            <button class="btnplan">Lo quiero ></button>
+        </div>
+        <div class="plan1" style="background: linear-gradient(rgba(30, 0, 0, 0.5),
+        rgba(30, 0, 0, 0.5)), url('imagenes/plan2.jpg') no-repeat center center/cover; background-position: top left;">
+            <h1>ASESORIA<br>
+                ONLINE</h1>
+            <div class="lineaplan"></div>        
+            <p>Plan de entrenamiento</p>
+            <p>Plan de alimentacion</p>
+            <p>Asesoria via wsp 24/7</p>
+            <button class="btnplan">Lo quiero ></button>
+        </div>
+        <div class="plan1" style="background: linear-gradient(rgba(30, 0, 0, 0.5),
+        rgba(30, 0, 0, 0.5)), url('imagenes/plan3.jpg') no-repeat center/cover; background-position: top left;">
+            <h1>ENTRENAMIENTO<br>
+                PERSONALIZADO</h1>
+            <div class="lineaplan"></div>        
+            <p>Entrenamiento presencial</p>
+            <p>Plan nutricional</p>
+            <p>Plan de entrenamiento</p>
+            <button class="btnplan">Lo quiero ></button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const scrollToTopButton = document.querySelector('.wsp a[href="#inicio"]'); // Selecciona el ícono de scroll hacia arriba
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) { // Si el usuario ha hecho scroll hacia abajo más de 100px
+            scrollToTopButton.style.display = 'block'; // Muestra el botón
+        } else {
+            scrollToTopButton.style.display = 'none'; // Oculta el botón
+        }
+    });
+</script>
 
 </body>
 </html>
