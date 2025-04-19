@@ -111,9 +111,10 @@
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .carousel-inner {
         height: 300px;
+        width: 200px;
     }
     
     .carousel-control {
@@ -121,5 +122,8 @@
         height: 30px;
         width: 30px;
         line-height: 25px;
+    }
+    .carousel {
+        width: 100%;
     }
 }

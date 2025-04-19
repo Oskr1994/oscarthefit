@@ -11,15 +11,16 @@
 
 <section id="inicio" class="inicio">
     <h2>FITNESS<br>TRAINER</h2>  
-    <div class="barra-superior">
+    <div class="barra-superior"></div>
         <nav class="nav-bar">
             <div class="logo">
                 <img src="imagenes/logot.png" alt="Logo" width="150px">
             </div>
-            <ul>
+            <div class="menu-btn"><img src="/imagenes/menu.png" alt="boton-menu" width="35px"></div>
+            <ul class="nav-links">
                 <li><a href="#inicio">Inico</a></li>
                 <li><a href="#sobremi">Sobre Mi</a></li>
-                <li><a href="#Planes">Planes</a></li>
+                <li><a href="#planes">Planes</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -27,7 +28,7 @@
     </div>
     <div class="portada">
         <h1>OSCAR<br>PEREZ</h1>
-        <button class="btn">PLANES</button>
+        <button onclick="location.href='#planes'" class="btn">PLANES</button>
   
     </div>
     <div class="wsp">
@@ -275,6 +276,20 @@
         }
     });
 </script>
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-bar ul');
+    const links = document.querySelectorAll('.nav-bar ul li a');
+    
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
