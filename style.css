@@ -72,13 +72,14 @@ html, body {
     width: 100%;
     z-index: 100;
     position: absolute;
+    padding: 0;
 }
 .portada h1 {
     color: white;
     text-shadow: #ff0000 0px 0px 5px;
     text-align: left;
     font-size: 100px;
-    padding: 250px 0px 0px 30px;
+    padding: 250px 0px 0px 15px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -105,7 +106,7 @@ html, body {
     font-size: 20px;
     cursor: pointer;
     z-index: 5;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .btn:hover {
     background-color: #ffffff;
@@ -308,7 +309,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(238, 238, 238);
-    padding-left: 30px;
+    padding: 30px;
     padding-bottom: 50px;
     margin: 0;
 }
@@ -459,6 +460,13 @@ html, body {
     color: #ff0000;
 }
 @media (max-width: 768px) {
+    .inicio {
+        background-image: url("imagenes/responsivo.jpg");
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: top;
+        background-repeat: no-repeat;
+    }
     .nav-bar ul {
         flex-direction: column;
         position: fixed;
@@ -524,6 +532,7 @@ html, body {
     }
     .planes {
         width: 100%;
+        padding: 15px;
     }
     .textocontacto {
         width: 100%;
@@ -543,5 +552,11 @@ html, body {
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .galeria {
+        padding: 15px;
+    }
+    .inicio h2 {
+        margin-top: 80px;
     }
 }
