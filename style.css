@@ -306,6 +306,7 @@ html, body {
     padding-left: 30px;
     padding-bottom: 50px;
     width: 100%;
+    margin: 0;
 }
 .galeria h1 {
     color: #000000;
@@ -480,8 +481,5 @@ html, body {
     }
     .portada h1 {
         font-size: 4rem;
-    }
-    .galeria {
-        width: 90%;
     }
 }
