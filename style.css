@@ -127,17 +127,8 @@ html, body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
-}
-.sobremi {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
-    padding: 50px 25px;
-    text-align: center;
-    gap: 20px;
-    font-family: sans-serif;
+    width: 50%;
+    min-width: 400px;
 }
 .sobremi h1 {
     color: #000000;
@@ -156,12 +147,15 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 45%;
+    min-width: 400px;
 }
 .foto1 img {
     border-radius: 10px;
     width: 400px;
     height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 .division {
     display: flex;
@@ -182,7 +176,7 @@ html, body {
     justify-content: center;
     background-color: rgb(238, 238, 238);
     color: rgb(0, 0, 0);
-    padding: 50px 25px;
+    padding: 50px 20px;
     text-align: center;
     gap: 20px;
     font-family: sans-serif;
@@ -199,8 +193,14 @@ html, body {
     text-align: left;
     line-height: 1.5;
 }   
-.personaltraining img {
-    width: 400px;
+.foto2 {
+    min-width: 350px;
+    width: 40%;
+}
+.foto2 img {
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
 }
 .textopersonaltraining {
@@ -208,7 +208,8 @@ html, body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    min-width: 400px;
+    width: 50%;
 }
 .planes {
     background-image: url("imagenes/vector-jan-2021-19_generated.jpg");
