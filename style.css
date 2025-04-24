@@ -1,7 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
     padding: 0;
 }
 .wsp {
@@ -62,8 +62,8 @@ html, body {
 .inicio {
     width: 100%;
     height: 100vh;
-    background-image: url("imagenes/portada.jpg");
-    background-size: 100vw auto;
+    background-image: url("imagenes/fondo2.jpg");
+    background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -489,7 +489,7 @@ html, body {
         z-index: 1000;
     }
     .inicio {
-        background-image: url("/imagenes/responsivo.jpg");
+        background-image: url("/imagenes/fondoresponsivo.jpg");
     }
     .portada h1 {
         font-size: 4rem;
