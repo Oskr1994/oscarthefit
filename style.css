@@ -1,7 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     margin: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     padding: 0;
 }
 .wsp {
@@ -63,8 +63,8 @@ html, body {
     width: 100%;
     height: 100vh;
     background-image: url("imagenes/fondo2.jpg");
-    background-size: 100%;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: top;
     background-repeat: no-repeat;
 }
 .portada {
