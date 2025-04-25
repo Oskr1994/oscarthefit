@@ -64,7 +64,7 @@ html, body {
     height: 100vh;
     background-image: url("imagenes/fondo2.jpg");
     background-size: 100%;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .portada {
@@ -299,7 +299,7 @@ html, body {
     color: rgb(255, 0, 0);
     text-align: center;
     text-decoration: none;
-    font-size: 8pt;
+    font-size: 10pt;
     cursor: pointer;
     padding: 20px 5px;
 }
@@ -461,11 +461,9 @@ html, body {
 }
 @media (max-width: 768px) {
     .inicio {
-        background-image: url("imagenes/responsivo.jpg");
+        background-image: url("/imagenes/fondoresponsivo.jpg");
         background-size: cover;
-        background-position-x: right;
-        background-position-y: top;
-        background-repeat: no-repeat;
+        background-position: right;
     }
     .nav-bar ul {
         flex-direction: column;
@@ -489,8 +487,7 @@ html, body {
         z-index: 1000;
     }
     .inicio {
-        background-image: url("/imagenes/fondoresponsivo.jpg");
-    }
+   }
     .portada h1 {
         font-size: 4rem;
     }
