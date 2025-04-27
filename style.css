@@ -68,20 +68,19 @@ html, body {
     background-repeat: no-repeat;
 }
 .portada {
-    margin: 0;
     width: 100%;
     z-index: 100;
     position: absolute;
-    padding: 0;
+    left: 5px;
+    bottom: 20px;
 }
 .portada h1 {
     color: white;
     text-shadow: #ff0000 0px 0px 5px;
     text-align: left;
     font-size: 100px;
-    padding: 250px 0px 0px 15px;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 
 }
 .inicio h2 {
