@@ -262,8 +262,18 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
+        <div>
+            <p>Visitas: <span id="visitas">Cargando...</span></p>
+        </div>
     </div>
 </footer>
+<script>
+    fetch('https://api.countapi.xyz/hit/oscarthefit/visitas')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visitas').innerText = data.value;
+      });
+  </script>
 <script>
     const scrollToTopButton = document.querySelector('.wsp a[href="#inicio"]'); // Selecciona el ícono de scroll hacia arriba
 
